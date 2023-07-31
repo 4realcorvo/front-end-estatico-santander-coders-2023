@@ -117,8 +117,34 @@ td,th{
 .color-text-modal{
     color: black;
 }
+footer{
+    background-color: #a1a1a1;
+    height: 50px;
+    margin-top: 71px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    margin-top: 10px;
+    margin-right: 60px;
+}
+footer ul li a{
+    color: black;
+}
+footer ul li a:hover{
+    border-bottom: 1px black solid;
+    padding-bottom: 10px;
+}
 @media(max-width:640px){
     th:nth-child(4),td:nth-child(4){
         display: none;
+    }
+    #h1btn button p{
+        display: none;
+    }
+    #h1btn button i{
+       margin-right: 10px;
     }
 }

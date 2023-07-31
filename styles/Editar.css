@@ -79,7 +79,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     grid-area: main;
 }
 main form{
@@ -102,7 +101,25 @@ main form button{
 
 /*Footer*/
 footer{
+    background-color: #a1a1a1;
+    height: 50px;
+    margin-top: 14px;
     grid-area: footer;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    margin-top: 10px;
+    margin-right: 60px;
+}
+footer ul li a{
+    color: black;
+}
+footer ul li a:hover{
+    border-bottom: 1px black solid;
+    padding-bottom: 10px;
 }
 .container-buttons{
     display: flex;
@@ -112,4 +129,7 @@ footer{
     width: 100px;
     height: 50px;
     margin: 5px;
+}
+.container-buttons button a{
+    color: white;
 }

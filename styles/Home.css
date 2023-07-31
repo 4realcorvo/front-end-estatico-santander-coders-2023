@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Ubuntu';
+}
+body{
+    background-color: #474747;
+}
+h1{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+/*Cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #191C23;
+}
+header form{
+    margin-right: 10px;
+}
+header form input{
+    color: white;
+    height: 40px;
+}
+#tamanho-header-button{
+    height: 40px;
+}
+#input-header::placeholder{
+    color: white;
+}
+header img{
+    margin-left: 60px;
+}
+/*Nav*/
+#nav-container a{
+    color: white;
+    padding-bottom: 10px;
+}
+#nav-container a:hover{
+    border-bottom: 1px rgb(231, 231, 231) solid;
+    color: rgb(231, 231, 231);
+}
+#nav-container a:active{
+    color: rgb(172, 172, 172);
+}
+.mg-left{
+    display: flex;
+    justify-content: center;
+    background-color: #303031;
+    height: 45px;
+    padding-top: 10px;
+}
+
+/*Conteúdo*/
+#h1btn{
+    justify-content: center;
+    position: relative;
+}
+#h1btn h1{
+    position: absolute;
+    top: 0;
+}
+#h1btn button{
+    position: absolute;
+    right: 20px;
+}
+#h1btn button p,#h1btn button i{
+    margin-top: 5px;
+}
+.btn{
+    height: 45px;
+}
+
+table{
+    margin-top: 80px;
+}
+th{
+    text-align: center;  
+}
+td,th{
+    border-collapse: collapse;
+    text-align: center;
+}
+.link1 a:active{
+    color: rgb(131, 131, 255);
+}
+.link2 a{
+    color: rgb(237, 0, 0);
+}
+.link2 a:hover{
+    color: rgb(179, 0, 0);
+}
+.link2 a:active{
+    color: rgb(240, 63, 63);
+}
+.modal-content{
+    width: 400px;
+}
+.modal-body p{
+    font-size: 20px;
+}
+.modal-content .btn-primary{
+    width: 175px;
+}
+.modal-content .btn-danger{
+    width: 175px;
+}
+.color-text-modal{
+    color: black;
+}
+@media(max-width:640px){
+    th:nth-child(4),td:nth-child(4){
+        display: none;
+    }
+}

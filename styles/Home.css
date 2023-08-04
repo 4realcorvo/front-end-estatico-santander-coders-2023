@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*Configs Gerais*/
 *{
     font-family: sans-serif;
     box-sizing: border-box;
@@ -10,85 +11,53 @@
 body{
     background-color: #474747;
 }
-h1{
-    color: white;
-}
 a{
     text-decoration: none;
 }
 /*Cabeçalho*/
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
     background-color: #191C23;
 }
-header form{
+header input{
+    background-color: #191C23;
+}
+.navbar-config{
+    background-color: #303031;
+    justify-content: center;
+}
+.navbar-text{
+    color: #fff;
     margin-right: 10px;
 }
-header form input{
-    color: white;
-    height: 40px;
-}
-#tamanho-header-button{
-    height: 40px;
-}
-#input-header::placeholder{
-    color: white;
-}
-header img{
-    margin-left: 60px;
-}
-/*Nav*/
-#nav-container a{
-    color: white;
-    padding-bottom: 10px;
-}
-#nav-container a:hover{
-    border-bottom: 1px rgb(231, 231, 231) solid;
-    color: rgb(231, 231, 231);
-}
-#nav-container a:active{
-    color: rgb(172, 172, 172);
-}
-.mg-left{
-    display: flex;
+/*Conteúdo - Titulo*/
+section{
     justify-content: center;
-    background-color: #303031;
-    height: 45px;
-    padding-top: 10px;
 }
-
-/*Conteúdo*/
-#h1btn{
-    justify-content: center;
+.container-title-button{
+    justify-content: space-around;
+    align-items: center;
     position: relative;
+    height: 50px;
 }
-#h1btn h1{
+.container-title{
+    color: #fff;
+    width: 320px;
     position: absolute;
-    top: 0;
+    left: 50%;
+    margin-left: -160px;
 }
-#h1btn button{
+.container-button{
+    width: 120px;
     position: absolute;
-    right: 20px;
+    right: 0;
 }
-#h1btn button p,#h1btn button i{
-    margin-top: 5px;
-}
-.btn{
-    height: 45px;
-}
-
-table{
-    margin-top: 80px;
-}
-th{
-    text-align: center;  
-}
+/*Conteúdo - Tabela*/
 td,th{
     border-collapse: collapse;
     text-align: center;
+}
+th{
+    text-align: center;  
 }
 .link1 a:active{
     color: rgb(131, 131, 255);
@@ -102,6 +71,7 @@ td,th{
 .link2 a:active{
     color: rgb(240, 63, 63);
 }
+/*Modal*/
 .modal-content{
     width: 400px;
 }
@@ -117,10 +87,11 @@ td,th{
 .color-text-modal{
     color: black;
 }
+/*Rodapé*/
 footer{
     background-color: #a1a1a1;
     height: 50px;
-    margin-top: 71px;
+    margin-top: 46px;
 }
 footer ul{
     display: flex;
@@ -141,10 +112,4 @@ footer ul li a:hover{
     th:nth-child(4),td:nth-child(4){
         display: none;
     }
-    #h1btn button p{
-        display: none;
-    }
-    #h1btn button i{
-       margin-right: 10px;
-    }
-}
+} 
